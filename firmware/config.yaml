@@ -1,0 +1,97 @@
+# FluidNC v4 configuration
+# Wemos D1 R32 + CNC Shield V3 + two DRV8825 drivers
+# X/Y: 1.8-degree NEMA 11 linear stages, 2 mm lead, 100 mm travel
+# DRV8825: M0/M1/M2 jumpers all installed (1/32 microstepping)
+# Laser: LaserTree 5 W optical module, PWM connected to shield SpnEn
+
+name: "100mm XY Laser"
+board: "Wemos D1 R32 + CNC Shield V3"
+
+verbose_errors: true
+report_inches: false
+
+stepping:
+  engine: RMT
+  idle_ms: 250
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 0
+
+axes:
+  # CNC Shield D8 / driver EN. If adding the shield causes a reset loop,
+  # remove the shield and resolve its GPIO12 boot-strap/pull-up conflict first.
+  # The CNC Shield EN line is active-low: GPIO12 LOW enables motion and
+  # GPIO12 HIGH disables the drivers. This setting describes the DISABLE state.
+  shared_stepper_disable_pin: gpio.12
+
+  x:
+    # 200 full steps/rev * 32 microsteps / 2 mm lead = 3200 steps/mm
+    steps_per_mm: 3200.000
+    max_rate_mm_per_min: 600.000
+    acceleration_mm_per_sec2: 20.000
+    max_travel_mm: 100.000
+    soft_limits: false
+    idle_disable: true
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      stepstick:
+        step_pin: gpio.26
+        direction_pin: gpio.16
+        disable_pin: NO_PIN
+    motor1:
+      null_motor:
+
+  y:
+    # 200 full steps/rev * 32 microsteps / 2 mm lead = 3200 steps/mm
+    steps_per_mm: 3200.000
+    max_rate_mm_per_min: 600.000
+    acceleration_mm_per_sec2: 20.000
+    max_travel_mm: 100.000
+    soft_limits: false
+    idle_disable: true
+    motor0:
+      limit_neg_pin: NO_PIN
+      limit_pos_pin: NO_PIN
+      limit_all_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 1.000
+      stepstick:
+        step_pin: gpio.25
+        direction_pin: gpio.27
+        disable_pin: NO_PIN
+    motor1:
+      null_motor:
+
+  # FluidNC defines at least XYZ. This machine has no physical Z motor.
+  z:
+    steps_per_mm: 1.000
+    max_rate_mm_per_min: 100.000
+    acceleration_mm_per_sec2: 10.000
+    max_travel_mm: 1.000
+    soft_limits: false
+    idle_disable: true
+    motor0:
+      null_motor:
+    motor1:
+      null_motor:
+
+start:
+  must_home: false
+
+# Shield SpnEn is GPIO19 on the Wemos D1 R32 pin map.
+# LaserTree LT-40W 5 W modules use TTL/PWM and a 5 kHz maximum PWM rate.
+Laser:
+  pwm_hz: 5000
+  output_pin: gpio.19
+  enable_pin: NO_PIN
+  tool_num: 0
+  speed_map: "0=0.000% 1000=100.000%"
+  # This laser has no separate enable wire. Force PWM to zero for both
+  # M5 and S0 so the beam cannot remain at the previous commanded power.
+  s0_with_disable: true
+  disable_with_s0: true
+  off_on_alarm: true

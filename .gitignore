@@ -1,0 +1,10 @@
+# SOLIDWORKS lock and temporary files
+~$*
+*.bak
+*.tmp
+
+# Operating-system and editor noise
+Thumbs.db
+.DS_Store
+.vscode/
+
