@@ -1,8 +1,8 @@
-"""Render quick-look PNGs from the STEP exports in this project.
+"""Render quick-look PNGs from supplied STEP files.
 
 The authoritative design files remain the SOLIDWORKS files under ``cad/``.
-These previews use the accompanying STEP exports so the repository is easy to
-understand without a CAD application.
+The repository intentionally keeps only selected neutral models, so each input
+is optional and only the requested preview group is rendered.
 """
 
 from __future__ import annotations
@@ -136,27 +136,33 @@ def render(triangles, output: Path, title: str, subtitle: str, elev: float, azim
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--cage", type=Path, required=True)
-    parser.add_argument("--laser", type=Path, required=True)
-    parser.add_argument("--adapter", type=Path, required=True)
+    parser.add_argument("--cage", type=Path)
+    parser.add_argument("--laser", type=Path)
+    parser.add_argument("--adapter", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    args.output.mkdir(parents=True, exist_ok=True)
-    cage = mesh_shape(load_step_shape(args.cage))
-    laser = mesh_shape(load_step_shape(args.laser))
-    adapter = mesh_shape(load_step_shape(args.adapter))
+    if not any((args.cage, args.laser, args.adapter)):
+        parser.error("provide at least one of --cage, --laser, or --adapter")
 
-    views = {
-        "cad-cage-isometric.png": (30, -55, "CNC cage assembly", "STEP preview exported from the SOLIDWORKS design", cage),
-        "cad-cage-front.png": (8, -90, "CNC cage assembly · front", "Front orthographic-style view", cage),
-        "cad-cage-right.png": (8, 0, "CNC cage assembly · right", "Right orthographic-style view", cage),
-        "cad-cage-top.png": (86, -90, "CNC cage assembly · top", "Top orthographic-style view", cage),
-        "cad-cage-rear.png": (8, 90, "CNC cage assembly · rear", "Rear orthographic-style view", cage),
-        "cad-cage-left.png": (8, 180, "CNC cage assembly · left", "Left orthographic-style view", cage),
-        "cad-laser-module.png": (24, -55, "LaserTree module", "STEP preview from the project CAD exports", laser),
-        "cad-driver-adapter.png": (28, -55, "Laser driver adapter", "P-DA-01 STEP preview from the project CAD exports", adapter),
-    }
+    args.output.mkdir(parents=True, exist_ok=True)
+    views = {}
+    if args.cage:
+        cage = mesh_shape(load_step_shape(args.cage))
+        views.update({
+            "cad-cage-isometric.png": (30, -55, "CNC cage assembly", "STEP preview exported from the SOLIDWORKS design", cage),
+            "cad-cage-front.png": (8, -90, "CNC cage assembly · front", "Front orthographic-style view", cage),
+            "cad-cage-right.png": (8, 0, "CNC cage assembly · right", "Right orthographic-style view", cage),
+            "cad-cage-top.png": (86, -90, "CNC cage assembly · top", "Top orthographic-style view", cage),
+            "cad-cage-rear.png": (8, 90, "CNC cage assembly · rear", "Rear orthographic-style view", cage),
+            "cad-cage-left.png": (8, 180, "CNC cage assembly · left", "Left orthographic-style view", cage),
+        })
+    if args.laser:
+        laser = mesh_shape(load_step_shape(args.laser))
+        views["cad-laser-module.png"] = (24, -55, "LaserTree module", "STEP preview from the project CAD exports", laser)
+    if args.adapter:
+        adapter = mesh_shape(load_step_shape(args.adapter))
+        views["cad-driver-adapter.png"] = (28, -55, "Laser driver adapter", "P-DA-01 STEP preview from the project CAD exports", adapter)
     for filename, (elev, azim, title, subtitle, triangles) in views.items():
         render(triangles, args.output / filename, title, subtitle, elev, azim)
 

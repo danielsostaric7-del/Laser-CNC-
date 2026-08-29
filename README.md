@@ -23,13 +23,19 @@ A compact XY laser CNC system designed in SOLIDWORKS and controlled by FluidNC o
 
 ## CAD files
 
-The complete native assembly is [`cad/CNC Assembly.SLDASM`](cad/CNC%20Assembly.SLDASM). Cage subassembly views and component previews are in the [CAD gallery](docs/cad-gallery.md). The SOLIDWORKS files remain the design source of truth.
+| Design source | File |
+| --- | --- |
+| Complete machine | [`CNC Assembly.SLDASM`](cad/CNC%20Assembly.SLDASM) |
+| Native component library | [`cad/`](cad/) — organized by subsystem |
+| Retained neutral models | [`IEC320-C14.STEP`](cad/AC%20Plug/IEC320-C14.STEP) · [`Laser Tree 40W AA.step`](cad/Laser%20Tree%20Slider/Laser%20Tree%2040W%20AA.step) |
+
+Intermediate STEP and STL exports are intentionally omitted; the native SOLIDWORKS files are the design source of truth. Cage subassembly views and component previews remain available in the [CAD gallery](docs/cad-gallery.md).
 
 ## Repository layout
 
 | Folder | Contents |
 | --- | --- |
-| [`cad/`](cad/) | SOLIDWORKS assemblies, parts, STEP exports, and STL exports |
+| [`cad/`](cad/) | Native SOLIDWORKS assemblies and parts, plus two retained vendor STEP models |
 | [`firmware/`](firmware/) | FluidNC machine configuration |
 | [`media/photos/`](media/photos/) | Cleaned photos of the completed machine and electronics |
 | [`media/diagrams/`](media/diagrams/) | Wiring and circuit diagram |

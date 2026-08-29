@@ -13,7 +13,7 @@ This list is derived from the FluidNC configuration, wiring diagram, CAD filenam
 | Power | Mean Well LRS-150-12, 12 V / 150 W supply | 1 | CAD model and electronics-box photo |
 | Power entry | IEC320-C14 inlet / switch assembly | 1 | CAD model and build photo |
 | Cooling | 12 V DC fan | 1 | CAD model and build photo |
-| Structure | Custom cage, slider, and electronics-box parts | 1 set | SOLIDWORKS assemblies and STL exports |
+| Structure | Custom cage, slider, and electronics-box parts | 1 set | SOLIDWORKS assemblies and parts |
 
 ## Purchased AliExpress listings
 

@@ -1,6 +1,6 @@
 # CAD preview gallery
 
-The authoritative design files are the native SOLIDWORKS assemblies and parts under [`cad/`](../cad/). The full-machine image comes from the top-level SOLIDWORKS assembly; the additional quick-look images use the accompanying STEP exports.
+The authoritative design files are the native SOLIDWORKS assemblies and parts under [`cad/`](../cad/). These preview images are retained as documentation assets even though intermediate STEP and STL exports are intentionally omitted from the repository.
 
 ## Full CNC assembly
 
@@ -9,6 +9,8 @@ The authoritative design files are the native SOLIDWORKS assemblies and parts un
 Source: [`cad/CNC Assembly.SLDASM`](../cad/CNC%20Assembly.SLDASM)
 
 ## Cage subassembly
+
+Source: [`cad/Cage/CNC_Cage_Assembly.SLDASM`](../cad/Cage/CNC_Cage_Assembly.SLDASM)
 
 | View | Preview |
 | --- | --- |
