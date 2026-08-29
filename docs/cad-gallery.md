@@ -1,8 +1,14 @@
 # CAD preview gallery
 
-The authoritative design files are the native SOLIDWORKS assemblies and parts under [`cad/`](../cad/). These images provide quick visual access to the STEP exports without requiring a CAD viewer.
+The authoritative design files are the native SOLIDWORKS assemblies and parts under [`cad/`](../cad/). The full-machine image comes from the top-level SOLIDWORKS assembly; the additional quick-look images use the accompanying STEP exports.
 
-## Cage assembly
+## Full CNC assembly
+
+![Full CNC assembly](../media/cad-previews/cnc-assembly-isometric.png)
+
+Source: [`cad/CNC Assembly.SLDASM`](../cad/CNC%20Assembly.SLDASM)
+
+## Cage subassembly
 
 | View | Preview |
 | --- | --- |
@@ -19,4 +25,3 @@ The authoritative design files are the native SOLIDWORKS assemblies and parts un
 | --- | --- |
 | LaserTree module | ![LaserTree module](../media/cad-previews/cad-laser-module.png) |
 | P-DA-01 driver adapter | ![Driver adapter](../media/cad-previews/cad-driver-adapter.png) |
-

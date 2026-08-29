@@ -2,7 +2,11 @@
 
 A compact XY laser CNC system designed in SOLIDWORKS and controlled by FluidNC on a Wemos D1 R32 with a CNC Shield V3. The machine combines two 100 mm linear stages, DRV8825 stepper drivers, a custom enclosure, and a LaserTree 5 W optical module.
 
-![Completed CNC machine](media/photos/machine-front.jpg)
+<p align="center">
+  <img src="media/cad-previews/cnc-assembly-isometric.png" width="720" alt="Full 100 mm XY laser CNC assembly in SOLIDWORKS">
+</p>
+
+<p align="center"><em>Full machine assembly from <code>cad/CNC Assembly.SLDASM</code>.</em></p>
 
 ## Highlights
 
@@ -13,13 +17,13 @@ A compact XY laser CNC system designed in SOLIDWORKS and controlled by FluidNC o
 - 5 kHz PWM laser control on GPIO19
 - Custom SOLIDWORKS cage, slider, electronics enclosure, and adapter models
 
-## CAD preview
+## Completed build
 
-| Isometric | Front | Right |
-| --- | --- | --- |
-| ![Cage isometric preview](media/cad-previews/cad-cage-isometric.png) | ![Cage front preview](media/cad-previews/cad-cage-front.png) | ![Cage right preview](media/cad-previews/cad-cage-right.png) |
+![Completed CNC machine](media/photos/machine-front.jpg)
 
-The complete native assembly is [`cad/CNC Assembly.SLDASM`](cad/CNC%20Assembly.SLDASM). Additional views and component previews are in the [CAD gallery](docs/cad-gallery.md). The preview images are convenience renders from the STEP exports included with the project; the SOLIDWORKS files remain the design source of truth.
+## CAD files
+
+The complete native assembly is [`cad/CNC Assembly.SLDASM`](cad/CNC%20Assembly.SLDASM). Cage subassembly views and component previews are in the [CAD gallery](docs/cad-gallery.md). The SOLIDWORKS files remain the design source of truth.
 
 ## Repository layout
 
@@ -47,4 +51,3 @@ This project uses a high-power laser module and mains-powered equipment. Use a s
 ## License
 
 No license has been specified yet. Until one is added, the project remains all rights reserved.
-
