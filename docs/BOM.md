@@ -29,4 +29,4 @@ These are the AliExpress listings from my orders. Check the selected size and ve
 | 1005008513205849 | [AliExpress](https://www.aliexpress.com/item/1005008513205849.html) |
 | Switching power supply | [AliExpress](https://www.aliexpress.com/item/1005008638665400.html) |
 
-[Circuit diagram](circuit-diagram/) · [Back to the project](../README.md)
+[Circuit diagram](circuit-diagram.md) · [Back to the project](../README.md)

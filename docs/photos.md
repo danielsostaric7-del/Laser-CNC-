@@ -16,4 +16,4 @@ The finished machine, a closer look at the hardware, and a test piece.
 
 Click a photo to view it at full size.
 
-[SOLIDWORKS screenshots](cad-gallery.md) · [Circuit diagram](circuit-diagram/) · [Back to the project](../README.md)
+[SOLIDWORKS screenshots](cad-gallery.md) · [Circuit diagram](circuit-diagram.md) · [Back to the project](../README.md)
