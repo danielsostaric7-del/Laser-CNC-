@@ -19,14 +19,14 @@ The main parts used in this build.
 
 These are the AliExpress listings from my orders. Check the selected size and version before ordering; some pages offer several options.
 
-| Listing | Link |
+| Part | Link |
 | --- | --- |
 | 32910354223 | [AliExpress](https://www.aliexpress.com/item/32910354223.html) |
-| 1005007144892529 | [AliExpress](https://www.aliexpress.com/item/1005007144892529.html) |
-| 1005006478108991 | [AliExpress](https://www.aliexpress.com/item/1005006478108991.html) |
-| 1005006031010342 | [AliExpress](https://www.aliexpress.com/item/1005006031010342.html) |
+| Cooling fan | [AliExpress](https://www.aliexpress.com/item/1005007144892529.html) |
+| CNC Shield V3 and stepper drivers | [AliExpress](https://www.aliexpress.com/item/1005006478108991.html) |
+| LaserTree laser module | [AliExpress](https://www.aliexpress.com/item/1005006031010342.html) |
 | 1005003012523694 | [AliExpress](https://www.aliexpress.com/item/1005003012523694.html) |
 | 1005008513205849 | [AliExpress](https://www.aliexpress.com/item/1005008513205849.html) |
-| 1005008638665400 | [AliExpress](https://www.aliexpress.com/item/1005008638665400.html) |
+| Switching power supply | [AliExpress](https://www.aliexpress.com/item/1005008638665400.html) |
 
-[Circuit diagram](../media/diagrams/circuit-diagram.png) · [Back to the project](../README.md)
+[Circuit diagram](circuit-diagram/) · [Back to the project](../README.md)
