@@ -16,6 +16,8 @@ I designed and built this small laser CNC around two 100 mm linear stages and a 
 
 [See all six photos](docs/photos.md), including the laser mount, electronics, power inlet, and test piece.
 
+[Watch the video](docs/video.md).
+
 ## Setup
 
 - 100 mm travel on each axis
