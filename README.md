@@ -26,6 +26,12 @@ I designed and built this small laser CNC around two 100 mm linear stages and a 
 
 The full pinout and motion settings are in [config.yaml](firmware/config.yaml).
 
+## Circuit diagram
+
+[![CNC wiring and circuit diagram](media/diagrams/circuit-diagram.png)](media/diagrams/circuit-diagram.png)
+
+Click the diagram to open it at full size.
+
 ## Project files
 
 | File or folder | What's inside |
