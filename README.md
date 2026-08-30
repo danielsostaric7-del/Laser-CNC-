@@ -16,7 +16,7 @@ I designed and built this small laser CNC around two 100 mm linear stages and a 
 
 [See all six photos](docs/photos.md), including the laser mount, electronics, power inlet, and test piece.
 
-[Watch the video](docs/video.md).
+[Download the video](https://github.com/danielsostaric7-del/100mm-xy-laser-cnc/raw/refs/heads/main/media/video/assembly-overview.mp4) · [Video notes](docs/video.md)
 
 ## Setup
 
