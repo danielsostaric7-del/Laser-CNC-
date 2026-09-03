@@ -21,12 +21,12 @@ These are the AliExpress listings from my orders. Check the selected size and ve
 
 | Part | Link |
 | --- | --- |
-| 32910354223 | [AliExpress](https://www.aliexpress.com/item/32910354223.html) |
+| Wemos D1 R32 | [AliExpress](https://www.aliexpress.com/item/32910354223.html) |
 | Cooling fan | [AliExpress](https://www.aliexpress.com/item/1005007144892529.html) |
 | CNC Shield V3 and stepper drivers | [AliExpress](https://www.aliexpress.com/item/1005006478108991.html) |
 | LaserTree laser module | [AliExpress](https://www.aliexpress.com/item/1005006031010342.html) |
-| 1005003012523694 | [AliExpress](https://www.aliexpress.com/item/1005003012523694.html) |
-| 1005008513205849 | [AliExpress](https://www.aliexpress.com/item/1005008513205849.html) |
-| Switching power supply | [AliExpress](https://www.aliexpress.com/item/1005008638665400.html) |
+| Electrical Power Socket | [AliExpress](https://www.aliexpress.com/item/1005003012523694.html) |
+| Linear Rail Motor | [AliExpress](https://www.aliexpress.com/item/1005008513205849.html) |
+| Power supply | [AliExpress](https://www.aliexpress.com/item/1005008638665400.html) |
 
 [Circuit diagram](circuit-diagram.md) · [Back to the project](../README.md)
