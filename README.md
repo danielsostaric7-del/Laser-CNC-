@@ -39,7 +39,7 @@ Click the diagram to open it at full size.
 | File or folder | What's inside |
 | --- | --- |
 | [CNC Assembly.SLDASM](cad/CNC%20Assembly.SLDASM) | The complete machine assembly |
-| [CAD folder](cad/) | SOLIDWORKS parts and subassemblies, plus the two supplier STEP models |
+| [CAD folder](cad/) | SOLIDWORKS parts and subassemblies |
 | [FluidNC configuration](firmware/config.yaml) | Pin assignments and machine settings |
 | [Circuit diagram](docs/circuit-diagram.md) | Wiring layout |
 | [Bill of Material](docs/BOM.md) | Main parts and purchase links |
