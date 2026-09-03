@@ -10,9 +10,9 @@ I designed and built this small laser CNC around two 100 mm linear stages and a 
 
 ## The finished machine
 
-| Front | Side |
+| Front | Electronics Box |
 | --- | --- |
-| ![Front of the finished CNC](media/photos/machine-front.jpg) | ![Side of the finished CNC](media/photos/machine-side.jpg) |
+| ![Front of the finished CNC](media/photos/machine-front.jpg) | ![Electronics box of the finished CNC](media/photos/electronics-box.jpg) |
 
 [See all six photos](docs/photos.md), including the laser mount, electronics, power inlet, and test piece.
 
