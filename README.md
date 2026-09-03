@@ -1,6 +1,6 @@
 # 100 mm XY Laser CNC
 
-I designed and built this small laser CNC around two 100 mm linear stages and a LaserTree 5 W module. The frame, laser-height adjustment, and electronics enclosure were modeled in SOLIDWORKS. A Wemos D1 R32 running FluidNC controls the two axis through a CNC Shield V3 and DRV8825 drivers.
+I designed and built this small laser CNC engraver around two 100 mm linear stages and a LaserTree 5 W module. The frame, laser-height adjustment, and electronics enclosure were modeled in SOLIDWORKS. A Wemos D1 R32 running FluidNC controls the two axis through a CNC Shield V3 and DRV8825 drivers.
 
 <p align="center">
   <img src="media/cad/assembly-isometric.png" width="720" alt="Full CNC assembly — my SOLIDWORKS isometric screenshot">
