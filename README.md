@@ -48,8 +48,6 @@ Keep the CAD folders together when opening the main assembly so SOLIDWORKS can f
 
 ## Safety
 
-This machine uses a high-power laser and mains electricity. The open frame shown here is not a laser-safe enclosure. Use a suitable enclosure, interlocks, emergency stop, ventilation, and laser eyewear rated for the wavelength. Check grounding, polarity, driver current limits, and the laser's off-state before running it. Never leave it operating unattended.
+This machine uses a high-power laser and electricity. The open frame shown here is not a laser-safe enclosure. Use a suitable enclosure, emergency stop, ventilation, and laser eyewear rated for the wavelength. Check grounding, polarity, driver current limits, and the laser's off-state before running it. Never leave it operating unattended.
 
-## License
 
-No license has been chosen yet. All rights reserved.
